@@ -17,5 +17,8 @@
         </div>
     </header>
     {{ $slot }}
+    <footer>
+        <span>© 2021 S.O.C Co.,Ltd. All Rights Reserved</span>
+    </footer>
 </body>
 </html>

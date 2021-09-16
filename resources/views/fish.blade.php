@@ -166,8 +166,8 @@
 
         <div class="socImg">
             <img src="img/socImage.jpeg" alt="" width="100%" height="100%">
-            <a href="">S.O.Cのインスタはこちら</a>
-            <a href="">S.O.C Fishingのインスタはこちら</a>
+            <a href="https://instagram.com/setagaya_outdoor_club?utm_medium=copy_link">S.O.Cのインスタはこちら</a>
+            <a href="https://youtube.com/channel/UCIy-uZpo1qu3a-f2wdv4HkA">S.O.CのYouTubeはこちら</a>
         </div>
     </div>
 </x-layout>

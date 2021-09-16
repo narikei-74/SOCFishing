@@ -12,4 +12,8 @@ class IndexController extends Controller
 
         return view('index')->with(['fishingSpots' => $FishingSpots]);
     }
+
+    // public function search() {
+
+    // }
 }

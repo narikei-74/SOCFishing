@@ -7,7 +7,7 @@ body {
     padding: 70px 0;
     margin: 0 10%;
     background-color: #fff;
-    opacity: .9;
+    opacity: .8;
 }
 .fishPosts .contents {
     border: solid 2px;
@@ -52,6 +52,8 @@ body {
 }
 
 
+
+
 .fishPost {
     padding: 30px;
 }
@@ -65,11 +67,7 @@ body {
 .fishPost p {
     line-height: 34px;
 }
-
-
-
-.socImg {
-    width: 35%;
-    height: 300px;
-    margin:  50px auto;
+.fishPost .fishImg {
+    width: 450px;
+    height: 350px;
 }

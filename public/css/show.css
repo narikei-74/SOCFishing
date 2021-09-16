@@ -1,0 +1,40 @@
+body {
+    background-image: url(../img/mainImage.jpeg);
+    background-size: cover;
+}
+.back-link {
+    padding-left: 0;
+}
+.showContainer {
+    padding: 70px 30px;
+    margin: 0 10%;
+    background: #fff;
+    opacity: .8;
+}
+.showContainer h1 {
+    margin-top: 50px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.spotInfo {
+    margin-bottom: 50px;
+}
+
+.spotImg {
+    width: 500px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+.spotInfo dt {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.spotInfo dd {
+    margin-bottom: 50px;
+}
+.spotInfo h3 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}

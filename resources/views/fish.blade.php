@@ -8,6 +8,12 @@
     </x-slot>
 
     <div class="fishPosts">
+        <div class="back-link">
+            <a href="{{ route('index') }}">home</a> &raquo; <span>ターゲットフィッシュ紹介</span>
+        </div>
+
+        <hr>
+
         <h1>ターゲットフィッシュ紹介</h1>
 
         <div class="contents">
@@ -29,7 +35,9 @@
         {{-- シロギス --}}
         <div class="fishPost" id="sirogisu">
             <h2>シロギス</h2>
-            <img src="img/fishImg/sirogisu.jpeg" alt="" width="400" height="300">
+            <div class="fishImg">
+                <img src="img/fishImg/sirogisu.jpeg" alt="" width="100%" height="100%">
+            </div>
             <h3>シーズン</h3>
             <p>
                 5月〜9月
@@ -39,7 +47,7 @@
             </p>
             <h3>習性</h3>
             <p>
-                砂地に生息する魚。大きな移動はあまり行わないので、比較的同じ場所に留まる傾向がある。群れで行動し、海岸線に沿って泳ぐという習性があるため、釣れた距離というのが非常に重要になってくる。上手くハマれば同じ距離で何十匹と釣れることもある。駆け上がりや障害物がある場所に溜まりやすいため、糸を巻いているときに重くなるポイントや沖にテトラポットがある場所などが絶好のポイントである。
+                砂地に生息する魚。日が出ている時間帯に活発に行動するため夜釣りだと難易度が上がる。ただ、30cmを超える大物は警戒心が強いため夜の方が釣りやすい。キスは大きな移動はあまり行わないので、比較的同じ場所に留まる傾向がある。群れで行動し、海岸線に沿って泳ぐという習性があるため、釣れた距離というのが非常に重要になってくる。上手くハマれば同じ距離で何十匹と釣れることもある。駆け上がりや障害物がある場所に溜まりやすいため、糸を巻いているときに重くなるポイントや沖にテトラポットがある場所などが絶好のポイントである。
             </p>
             <h3>釣り方</h3>
             <p>
@@ -98,7 +106,9 @@
         {{-- イシモチ --}}
         <div class="fishPost" id="isimoti">
             <h2>イシモチ</h2>
-            <img src="img/fishImg/isimoti.jpeg" alt="" width="350" height="400">
+            <div class="fishImg">
+                <img src="img/fishImg/isimoti.jpeg" alt="" width="80%" height="100%">
+            </div>
             <h3>シーズン</h3>
             <p>
                 5月〜11月
@@ -156,6 +166,8 @@
 
         <div class="socImg">
             <img src="img/socImage.jpeg" alt="" width="100%" height="100%">
+            <a href="">S.O.Cのインスタはこちら</a>
+            <a href="">S.O.C Fishingのインスタはこちら</a>
         </div>
     </div>
 </x-layout>

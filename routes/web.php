@@ -14,16 +14,21 @@ use App\Http\Controllers\IndexController;
 |
 */
 
+//トップページ
 Route::get('/', [IndexController::class, 'index'])->name("index");
+// Route::post('/', [IndexController::class, 'search'])->name("search");
 
+// 釣り場詳細ページ
 Route::get('/fish', function () {
     return view('fish');
 })->name("fish");
 
+// 三浦海岸
 Route::get('/show/miura', function () {
     return view('show.miura');
 })->name("miura");
 
+// 九十九里浜（一宮）
 Route::get('/show/kujuItimiya', function () {
     return view('show.kujuItimiya');
 })->name("kujuItimiya");

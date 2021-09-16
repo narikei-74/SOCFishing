@@ -28,10 +28,13 @@ header p {
 .nav a {
     color: #fff;
     text-decoration: none;
-
 }
 .nav a:hover {
     opacity: .5;
+}
+.back-link {
+    font-size: 16px;
+    padding-left: 30px;
 }
 
 
@@ -77,6 +80,7 @@ header p {
     color: palevioletred;
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 
@@ -134,4 +138,19 @@ th {
 }
 td {
     border: solid 2px;
+}
+
+
+/* フッター */
+.socImg {
+    width: 400px;
+    height: 350px;
+    margin:  0 auto;
+    margin-bottom: 150px;
+    text-align: center;
+}
+.socImg a {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
 }

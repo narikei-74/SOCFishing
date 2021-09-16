@@ -3,7 +3,7 @@
         S.O.C Fishing - ホーム
     </x-slot>
     <x-slot name="link">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{ url('css/style.css') }}">
     </x-slot>
 
     <div class="mainImg">
@@ -21,7 +21,7 @@
     </div>
     <div class="post">
         <h1 class="postTitle">釣り場一覧</h1>
-        <form action="">
+        {{-- <form action="{{ route('search') }}" method="POST">
             <p class="conditions">条件を絞る</p>
             <div class="send">
                 <div class="form">
@@ -43,7 +43,7 @@
                 </div>
                 <button class="btn">検索</button>
             </div>
-        </form>
+        </form> --}}
         <table>
             <thead>
                 <tr>
@@ -62,5 +62,13 @@
                 @endforeach
             </tbody>
         </table>
+    </div>
+
+    <hr>
+
+    <div class="socImg">
+        <img src="img/socImage.jpeg" alt="" width="100%" height="100%">
+        <a href="">S.O.Cのインスタはこちら</a>
+        <a href="">S.O.C Fishingのインスタはこちら</a>
     </div>
 </x-layout>

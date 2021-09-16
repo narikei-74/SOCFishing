@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <p class="soc">S.O.C Fishing</p>
-        <div class="nav">
-            <a href="">釣り場一覧</a>
-            <span>|</span>
-            <a href="">ターゲット紹介</a>
-        </div>
-    </header>
+<x-layout>
+    <x-slot name="title">
+        S.O.C Fishing - ホーム
+    </x-slot>
+    <x-slot name="link">
+        <link rel="stylesheet" href="css/style.css">
+    </x-slot>
+
     <div class="mainImg">
         <div class="title">
             <h1>
@@ -29,24 +19,30 @@
             </div>
         </div>
     </div>
-    <div>
-        <h1>釣り場一覧</h1>
+    <div class="post">
+        <h1 class="postTitle">釣り場一覧</h1>
         <form action="">
-            <p>条件を絞る</p>
-            <label>都道府県<input type="text"></label>
-            　ターゲット
-            <select>
-                <option value="">選択しない</option>
-                <option value="">シロギス</option>
-                <option value="">カレイ</option>
-                <option value="">マゴチ</option>
-                <option value="">ヒラメ</option>
-                <option value="">イシモチ</option>
-                <option value="">イナダ</option>
-                <option value="">タチウオ</option>
-                <option value="">シーバス</option>
-            </select>
-
+            <p class="conditions">条件を絞る</p>
+            <div class="send">
+                <div class="form">
+                    <label>都道府県 <input type="text"></label>
+                    <label for="">
+                        ターゲット
+                        <select>
+                            <option value="">選択しない</option>
+                            <option value="">シロギス</option>
+                            <option value="">カレイ</option>
+                            <option value="">マゴチ</option>
+                            <option value="">ヒラメ</option>
+                            <option value="">イシモチ</option>
+                            <option value="">イナダ</option>
+                            <option value="">タチウオ</option>
+                            <option value="">シーバス</option>
+                        </select>
+                    </label>
+                </div>
+                <button class="btn">検索</button>
+            </div>
         </form>
         <table>
             <thead>
@@ -57,13 +53,14 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($fishingSpots as $fishingSpot)
                 <tr>
-                    <td>三浦海岸</td>
-                    <td>神奈川県</td>
-                    <td>シロギス</td>
+                    <td><a href="{{ route("$fishingSpot->url") }}">{{ $fishingSpot->name }}</a></td>
+                    <td>{{ $fishingSpot->prefecture }}</td>
+                    <td>{{ $fishingSpot->topFish }}</td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
-</body>
-</html>
+</x-layout>

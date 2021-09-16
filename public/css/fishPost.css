@@ -1,0 +1,75 @@
+/* 全体と目次 */
+body {
+    background-image: url(../img/mainImage.jpeg);
+    background-size: cover;
+}
+.fishPosts {
+    padding: 70px 0;
+    margin: 0 10%;
+    background-color: #fff;
+    opacity: .9;
+}
+.fishPosts .contents {
+    border: solid 2px;
+    margin:  0 auto;
+    margin-bottom: 100px;
+    width: 65%;
+    padding: 20px;
+}
+.contentsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contentsGrid span {
+    text-align: center;
+    margin-bottom: 10px;
+    border-left: solid 4px;
+}
+.magoti, .si-basu {
+    border-right: solid 4px;
+}
+.contentsGrid a {
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: purple;
+}
+.contentsGrid a:hover {
+    opacity: .5;
+}
+.fishPosts .contents h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.fishPosts h1 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.fishPosts h2 {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.fishPost {
+    padding: 30px;
+}
+.fishPost h2 {
+    font-size: 30px;
+    padding-top: 35px;
+}
+#karei, #magoti, #inada, #si-basu {
+    background-color: #efefef;
+}
+.fishPost p {
+    line-height: 34px;
+}
+
+
+
+.socImg {
+    width: 35%;
+    height: 300px;
+    margin:  50px auto;
+}

@@ -1,13 +1,32 @@
 /* 全体と目次 */
 body {
     background-image: url(../img/mainImage.jpeg);
+    background-position: center;
     background-size: cover;
+    animation-name: slideshow;
+    animation-duration: 36s;
+    animation-iteration-count: infinite;
+}
+@keyframes slideshow {
+    0% {
+        background-image: url(../img/mainImage.jpeg);
+        background-position: center;
+    }
+    33% {
+        background-image: url(../img/mainImage2.jpeg);
+        background-position: right;
+    }
+    66% {
+        background-image: url(../img/mainImage3.jpeg);
+        background-position: left;
+    }
 }
 .fishPosts {
     padding: 70px 0;
-    margin: 0 10%;
+    padding-bottom: 40px;
+    margin: 0 15%;
     background-color: #fff;
-    opacity: .8;
+    opacity: .9;
 }
 .fishPosts .contents {
     border: solid 2px;
@@ -23,17 +42,17 @@ body {
 .contentsGrid span {
     text-align: center;
     margin-bottom: 10px;
-    border-left: solid 4px;
+    border-left: solid 4px rgb(24, 24, 66);
 }
 .magoti, .si-basu {
-    border-right: solid 4px;
+    border-right: solid 4px rgb(24, 24, 66);
 }
 .contentsGrid a {
     letter-spacing: 2px;
     text-decoration: none;
-    color: purple;
+    color: rgb(24, 24, 66);
 }
-.contentsGrid a:hover {
+.contentsGrid span:hover {
     opacity: .5;
 }
 .fishPosts .contents h2 {
@@ -71,3 +90,118 @@ body {
     width: 450px;
     height: 350px;
 }
+
+
+
+
+
+/* タブレット用 1024px以下 */
+@media (max-width:1024px) {
+    .fishPosts h1 {
+        font-size: 28px;
+    }
+    .contents h2 {
+        font-size: 22px;
+    }
+    .contentsGrid span {
+        font-size: 14px;
+        border-left: solid 3px rgb(24, 24, 66);
+    }
+    .magoti, .si-basu {
+        border-right: solid 3px rgb(24, 24, 66);
+    }
+    .fishPost h2 {
+        font-size: 26px;
+    }
+    .fishPost h3 {
+        font-size: 18px;
+    }
+    .fishPost p {
+        font-size: 14px;
+    }
+    .fishPost li {
+        font-size: 14px;
+    }
+    .fishPost .fishImg {
+        width: 420px;
+        height: 330px;
+    }
+}
+
+
+
+/* 800px以下 */
+@media (max-width: 800px) {
+    .fishPost .fishImg {
+        width: 360px;
+        height: 260px;
+    }
+    .fishPosts h1 {
+        font-size: 26px;
+    }
+    .fishPosts .contents h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* スマホ用 600px以下 */
+@media (max-width: 600px) {
+    .fishPosts h1 {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .fishPosts .contents h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .contentsGrid {
+        display: block;
+    }
+    .contentsGrid span {
+        display: block;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid rgb(24, 24, 66);
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .contentsGrid span a {
+        color: rgb(24, 24, 66);
+    }
+    .fishPost h2 {
+        font-size: 22px;
+    }
+    .fishPost .fishImg {
+        width: 100%;
+        height: 250px;
+    }
+    .fishPost h3 {
+        font-size: 16px;
+    }
+    .fishPost p {
+        font-size: 13px;
+    }
+    .fishPost li {
+        font-size: 13px;
+    }
+}
+
+
+/* 500px以下 */
+@media (max-width: 500px) {
+    .fishPost .fishImg  {
+        height: 200px;
+    }
+}
+
+/* 400px以下 */
+@media (max-width: 400px) {
+    .fishPost .fishImg {
+        height: 180px;
+    }
+}
+

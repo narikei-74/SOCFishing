@@ -1,5 +1,8 @@
 {{-- 九十九里浜（一宮） --}}
 <x-layout>
+    <x-slot name="description">
+        <meta name="description" content="九十九里浜（一宮）での釣り方や釣れる魚を紹介しています。イシモチがよく釣れる場所なのでイシモチ狙いの人におすすめです。">
+    </x-slot>
     <x-slot name="title">
         S.O.C Fishing 釣り場ー九十九里浜（一宮）
     </x-slot>

@@ -1,5 +1,8 @@
 {{-- 三浦海岸 --}}
 <x-layout>
+    <x-slot name="description">
+        <meta name="description" content="三浦海岸での釣り方や釣れる魚を紹介しています。シロギスがよく釣れる場所なのでシロギス狙いの人におすすめです。">
+    </x-slot>
     <x-slot name="title">
         S.O.C Fishing - 三浦海岸
     </x-slot>

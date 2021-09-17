@@ -1,6 +1,9 @@
 <x-layout>
+    <x-slot name="description">
+        <meta name="description" content="シロギス、ヒラメ、シーバスなどの釣り方や釣り場を初心者でもわかりやすく解説しています。関東の釣れる場所（サーフ）を紹介。皆さんの釣果アップに役立つはずです！！">
+    </x-slot>
     <x-slot name="title">
-        S.O.C Fishing - ホーム
+        S.O.C Fishing - ホーム 釣り場一覧
     </x-slot>
     <x-slot name="link">
         <link rel="stylesheet" href="{{ url('css/style.css') }}">

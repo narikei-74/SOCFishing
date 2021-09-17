@@ -1,4 +1,7 @@
 <x-layout class="fish">
+    <x-slot name="description">
+        <meta name="description" content="S.O.Cがターゲットにしている魚を徹底的に分析し、釣果アップを目指します。シロギス、ヒラメ、シーバスなどの人気ターゲットを紹介！！">
+    </x-slot>
     <x-slot name="title">
         S.O.C Fishing - ターゲット紹介
     </x-slot>
